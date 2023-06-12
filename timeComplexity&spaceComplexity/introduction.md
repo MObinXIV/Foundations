@@ -12,3 +12,19 @@ let's consider that example. U run an algorithm in a mac machine with high compu
 ## What
 
 It's rate at which time taken increases with respect to the input size.it's U can call an average way to calculate the algorithm taken time. so we use something named (**Big-Oh**) notation.
+
+## How to compute time complexity
+
+it's ongoing process , applied to every single code or algorithm U generate and it have a se of basic rules.
+
+- consider the worst case scenario -> O(something).
+- avoid constants.
+- avoid lower values. 
+
+## Space complexity (memory space)
+
+it consists of 2 parts: 
+
+- Auxilary space -> space U take to solve the problem.
+- input space -> space that U take to store the input.
+
