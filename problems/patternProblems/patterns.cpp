@@ -16,7 +16,7 @@ void pattern2(int n)
     for (int i = 0; i < n; i++)
     {
         // Space
-        for (int j = i; j < n; j++)
+        for (int j = 0; j < n-i-1; j++)
             cout << " ";
 
         // Stars
@@ -24,7 +24,7 @@ void pattern2(int n)
             cout << "*";
 
         // Space
-        for (int j = 0; j < n; j++)
+        for (int j = 0; j < n-i-1; j++)
             cout << " ";
         cout << endl;
     }
@@ -47,6 +47,11 @@ void pattern3 (int n){
         cout << endl;
     }
 }
+
+void pattern4(int n){
+    pattern2(n);
+    pattern3(n);
+}
 int main()
 {
     // int t; 
@@ -57,5 +62,6 @@ int main()
     //     int n ; 
     //     cin>>n;
     // }
-    pattern3(5);
+    
 }
+
