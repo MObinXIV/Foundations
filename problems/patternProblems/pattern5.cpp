@@ -4,16 +4,24 @@ using namespace std;
 
 int main()
 {
-    int k =1;
-    int l=4;// l=i-1
-    for (int i =1;i<=5;i++)
+    int t; 
+    cout<<"enter the number of levels\n";
+    cin>>t;
+   
+    for (int i =0;i<t;i++)
     {
-        for(int h  = 0 ;h<l;h++)
+        // Space 
+        for (int j =i;j<t;j++)
         cout<<" ";
-        for (int j = 1;j<=k;j++)
+
+        // Stars 
+        for(int k = 0 ; k< i*2+1;k++)
         cout<<"*";
+
+        // Space
+        for (int j = 0; j < t; j++)
+        cout << " ";
         cout<<endl;
-        k+=2;
-        l--;
     }
 }
+
