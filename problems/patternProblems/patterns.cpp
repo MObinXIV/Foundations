@@ -233,19 +233,14 @@ void pattern15(int n)
 {
     for (int i =0;i<n;i++)
     {
-        if(i==0 || i==n-1){
-            for (int j =0;j<n;j++)
+        for(int j =0;j<n;j++){
+            // condition to print stars only on edges
+            if (i==0 || j==0 || i==n-1 || j==n-1)
             cout<<"*";
-            cout<<endl;
-        }
-        else{
-            cout<<"*";
-            int sp=n-2;
-            for (int j =1;j<=sp;j++)
+            else
             cout<<" ";
-            cout<<"*";
-            cout<<endl;
         }
+        cout<<endl;
     }
 }
 int main()
