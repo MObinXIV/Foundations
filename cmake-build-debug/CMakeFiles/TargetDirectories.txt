@@ -1,0 +1,3 @@
+D:/BFCAI/C++/Concepts/Foundations/cmake-build-debug/CMakeFiles/Foundations.dir
+D:/BFCAI/C++/Concepts/Foundations/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/BFCAI/C++/Concepts/Foundations/cmake-build-debug/CMakeFiles/rebuild_cache.dir

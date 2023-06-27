@@ -29,13 +29,33 @@ void pattern2(int n)
         cout << endl;
     }
 }
+
+void pattern3 (int n){
+    for (int i = 0; i < n; i++)
+    {
+        // Space
+        for (int j = 0; j < i; j++)
+            cout << " ";
+
+        // Stars
+        for (int k =0 ; k < 2 * n - (2 * i + 1); k++)
+            cout << "*";
+
+        // Space
+        for (int j = 0; j < i; j++)
+            cout << " ";
+        cout << endl;
+    }
+}
 int main()
 {
-    int t; 
-    cin>>t;
+    // int t; 
+    // cin>>t;
 
-    for (int i =0;i<t;i++)
-    {
-
-    }
+    // for (int i =0;i<t;i++)
+    // {
+    //     int n ; 
+    //     cin>>n;
+    // }
+    pattern3(5);
 }
