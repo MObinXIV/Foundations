@@ -15,7 +15,8 @@ int main()
     int a,b;
     cout<<"enter 2nums\n";
     cin>>a>>b;
-    int gcd =1;
+    gcd(a,b);
+    // int gcd =1;
     // for (int i=2;i<min(a,b);i++)
     // {
     //     if (a%i==0 && b%i==0)
@@ -24,13 +25,13 @@ int main()
 
 
 // more elegant way
-    for (int i =min(a,b);i>1;i--)
-    {
-        if(a%i==0 && b%i==0)
-        {
-            gcd=i;
-            break;
-        }
-    }
-    cout<<gcd<<endl;
+    // for (int i =min(a,b);i>1;i--)
+    // {
+    //     if(a%i==0 && b%i==0)
+    //     {
+    //         gcd=i;
+    //         break;
+    //     }
+    // }
+    // cout<<gcd<<endl;
 }
