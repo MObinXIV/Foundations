@@ -2,9 +2,7 @@
 
 using namespace std;
 
-int N=1e6;
-int seive[1000001];
-
+// 1st intuition
 void createSeive(int n)
 {
 
@@ -23,9 +21,27 @@ void createSeive(int n)
     }
 }
 
-// 1st intuition 
+// 1st optimization -> is we begin from i*i as we got the multiples 
+void createSeive(int n)
+{
+
+    vector<bool> primes(n + 1, true);
+    primes[0] = primes[1] = 0;
+
+    for (long long i = 2; i * i <= n; ++i)
+    {
+        if (primes[i])
+        {
+            for (int j = i *i; j <= n; j += i)
+            {
+                primes[j] = 0;
+            }
+        }
+    }
+}
+
 
 int main()
 {
-    cout<<N;
+    
 }
