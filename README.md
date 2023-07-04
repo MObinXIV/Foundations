@@ -1,2 +1,2 @@
 # Foundations
-this is for programming foundations in c++ an 
+this is for programming foundations in c++ 
