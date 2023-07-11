@@ -38,14 +38,14 @@ Therefore, we have shown that if n is an odd integer, then n^2 is odd.
 
 ---
 
-## Proof by contraposition (~q->~p if true then q->p is also true)
+## Proof by contraposition (~q->~p if true then p->q is also true)
 
 when faced with difficulties in finding a direct proof, it is worth exploring other proof methods, such as proof by contraposition. By leveraging the logical equivalence between a conditional statement and its contrapositive, we can establish the truth of the original statement by proving its contrapositive instead. This expands our toolkit for proving theorems and allows us to overcome dead ends or obstacles encountered in direct proofs.
 ### Example
 
 - Prove that if n is an integer and 3n + 2 is odd, then n is odd
 
-we can express it as n = 2k, where k is an integer.
+- ~q we can express it as n = 2k, where k is an integer.
 
 Substituting this into 3n + 2:
 
@@ -56,3 +56,45 @@ Here, we can see that 3n + 2 can be written as 2 times an integer (3k + 1), whic
 Therefore, we have shown that if n is an even integer, then 3n + 2 is also even.
 
 By proving the contrapositive, we have established the truth of the original statement. Thus, we have demonstrated that if 3n + 2 is odd, then n must be odd as well, using the proof by contraposition.
+
+---
+## Proofs by Contradiction
+
+Proof by contradiction is a method of proving a statement by assuming the opposite (negation) of what we want to prove and showing that it leads to a contradiction or an absurdity. If assuming the negation leads to an inconsistency, then our original statement must be true.
+### Steps:
+
+1. Assume the negation of the statement we want to prove.
+2. Deduce consequences from this assumption.
+3. Show that these consequences lead to a contradiction or an impossibility.
+4. Conclude that the original statement must be true since its negation leads to a contradiction.
+
+
+### Examples
+
+- Prove that √2 is irrational by giving a proof by contradiction.
+
+by contradiction (we 're going to prove that  √2 is rational).
+
+ √2 = a/b(a & b have no common factors). by squaring both sides
+ 2=a^2/b^2. -> a^2=2b^2. which indicates that a^2 is even which lead a is even
+
+, here we can establish that a^2=(2c)^2
+
+so 
+
+4c^2 = 2b^2 -> b^2 =2c^2
+
+which states that b is even.
+
+We have now shown that the assumption of ¬p leads to the equation √2 = a∕b, where
+a and b have no common factors, but both a and b are even, that is, 2 divides both a and b.
+Note that the statement that √2 = a∕b, where a and b have no common factors, means, in
+particular, that 2 does not divide both a and b. Because our assumption of ¬p leads to the
+contradiction that 2 divides both a and b and 2 does not divide both a and b, ¬p must be false.
+
+
+## the difference between contradiction and contraposition
+
+The main difference between proof by contradiction and proof by contraposition lies in their approach. In proof by contradiction, we assume the negation of the statement we want to prove and derive a contradiction. This contradiction shows that the original statement must be true. On the other hand, in proof by contraposition, we directly prove the contrapositive statement, which is logically equivalent to the original statement. By proving the contrapositive, we establish the truth of the original statement.
+
+
