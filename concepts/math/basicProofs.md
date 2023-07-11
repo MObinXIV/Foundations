@@ -38,10 +38,10 @@ Therefore, we have shown that if n is an odd integer, then n^2 is odd.
 
 ---
 
-## Proof by contraposition
+## Proof by contraposition (~q->~p if true then q->p is also true)
 
 when faced with difficulties in finding a direct proof, it is worth exploring other proof methods, such as proof by contraposition. By leveraging the logical equivalence between a conditional statement and its contrapositive, we can establish the truth of the original statement by proving its contrapositive instead. This expands our toolkit for proving theorems and allows us to overcome dead ends or obstacles encountered in direct proofs.
-## Example
+### Example
 
 - Prove that if n is an integer and 3n + 2 is odd, then n is odd
 
