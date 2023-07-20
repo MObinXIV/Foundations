@@ -58,9 +58,12 @@ Therefore, we have shown that if n is an even integer, then 3n + 2 is also even.
 By proving the contrapositive, we have established the truth of the original statement. Thus, we have demonstrated that if 3n + 2 is odd, then n must be odd as well, using the proof by contraposition.
 
 ---
-## Proofs by Contradiction
+## Proofs by Contradiction(~p / p &~q)
 
 Proof by contradiction is a method of proving a statement by assuming the opposite (negation) of what we want to prove and showing that it leads to a contradiction or an absurdity. If assuming the negation leads to an inconsistency, then our original statement must be true.
+
+- **for one proposition** -> assume ~p is true, then find a contradiction that assumes ~p is false,so p is true.
+- **for implicatoin**-> assume p & ~q are true then find a contradiction that shows either p->q or ~q->~p
 ### Steps:
 
 1. Assume the negation of the statement we want to prove.
