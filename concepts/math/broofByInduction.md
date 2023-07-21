@@ -62,4 +62,9 @@ we need to show that p(k+1) => (k+1)(k+2)/2 is true.
 
 k^2+3k+2/2=
 
-(k+1)(k+2)/2
+(k+1)(k+2)/2.
+
+This last equation shows that P(k + 1) is true under the assumption that P(k) is true. This completes the inductive step.
+We have completed the basis step and the inductive step, so by mathematical induction we
+know that P(n) is true for all positive integers n. That is, we have proven that 1 + 2 + ⋯ + n =
+n(n + 1)∕2 for all positive integers n
