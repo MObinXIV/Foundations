@@ -37,3 +37,29 @@ to apply Induction , we follow these basic steps:
 1. Base Case -> We first prove that the statement is true for the smallest value of the natural number, usually 1 or 0 (depending on the convention).
 2. Inductive Step-> We then prove that if the statement is true for any arbitrary natural number k, it must also be true for the next natural number k+1.
 By combining these two steps, we can prove that the statement is true for all natural numbers greater than or equal to the base case value.
+
+## Example :
+
+Show that if n is a positive integer, then
+1 + 2 + ⋯ + n = n(n + 1)
+/2
+.
+
+- Base Case:
+
+for n=1.
+
+p(1)-> 1=1*2/2 -> so it's true 
+
+- Inductive step:
+
+for the purpose of induction, we assume that p(k)=k(k+1)/2 is true.
+we need to show that p(k+1) => (k+1)(k+2)/2 is true.
+
+1+2+3+4....k+(k+1)=
+
+(1+2+3+4...k)+(k+1)=k(k+1)/2 +(k+1)=
+
+k^2+3k+2/2=
+
+(k+1)(k+2)/2
