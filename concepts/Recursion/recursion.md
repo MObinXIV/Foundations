@@ -8,7 +8,7 @@ recursion is a powerful technique that offers numerous benefits for solving comp
 
 ## What:
 
-Recursion is a programming technique in which a **function calls itself until a condition is met. In other words, it is a process where a function solves a problem by breaking it down into smaller and simpler subproblems of the same type. Each subproblem is then solved by calling the same function, and this process continues until a base case is reached, which is a simple problem that can be solved directly without further recursion.
+Recursion is a programming technique in which a **function calls itself until a condition is met**. In other words, it is a process where a function solves a problem by breaking it down into smaller and simpler subproblems of the same type. Each subproblem is then solved by calling the same function, and this process continues until a base case is reached, which is a simple problem that can be solved directly without further recursion.
 
 
 ## How:

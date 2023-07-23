@@ -31,7 +31,7 @@ int main()
 {
     int n;
     cout << "Enter a number: ";
-    // cin >> n;
+    cin >> n;
 
         print(5);
     // vector<int> result = printNosRecursive(n);
