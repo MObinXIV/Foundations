@@ -1,23 +1,17 @@
+//
 #include <bits/stdc++.h>
 using namespace std;
 
-bool isPalindrome(int i , string s, int j)
+bool isPalindrome(int i , string &s)
 {
-    if(i>=j) return true;
-    while(!isalpha(s[i])) i++;
-    while (!isalpha(s[j]))
-        j--;
-    if(tolower(s[i])==tolower(s[j]))
-    return isPalindrome(i+1,s,j-1);
-    else 
-    {
-        return false;
+    if(i>=s.size()/2) return true;
+    if(s[i]!=s[s.size()-i-1]) return false;
+    return isPalindrome(i + 1, s);
     }
-}
+
 bool isPalindrome(string s)
 {
-    int i=0,j=s.size()-1;
-    return isPalindrome(i,s,j);
+    return isPalindrome(0,s);
 }
 int main()
 {
