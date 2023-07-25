@@ -14,3 +14,6 @@ here, we use recursion to print subsequences.
     subsets(ind+1,ds,nums,ans,n);
     ds.pop_back();
     subsets(ind+1,ds,nums,ans,n);}`
+
+-T.c -> O(2^n *n)
+-S.c -> O(n)
