@@ -14,7 +14,7 @@ int main()
     vector<int> hash(26, 0);
     for (int i = 0; i < s.size(); i++)
     {
-        hash[s[i]-'a']++;
+        hash[s[i]]++;
     }
     int q;
     cout << "Enter the number of queries U want\n";
@@ -25,6 +25,6 @@ int main()
         cout << "Enter the number U wanna to to get it frequency \n";
         cin >> c;
         // fetch
-        cout << hash[c-'a'] << endl;
+        cout << hash[c] << endl;
     }
 }
