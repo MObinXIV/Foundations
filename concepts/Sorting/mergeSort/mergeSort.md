@@ -50,3 +50,5 @@
     `mergeSort(arr,mid+1,high);`
     `merge(arr,low,mid,high);` 
     `}`
+
+## Complexity -> time-> nLog(n) , space->O(n)
