@@ -1,5 +1,5 @@
 // push the maximum to the last by adjacent swaps
-// T.C-> O(n)
+// T.C-> O(n^2)
 #include <bits/stdc++.h>
 
 using namespace std;
