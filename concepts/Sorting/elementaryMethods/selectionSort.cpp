@@ -1,4 +1,5 @@
 // get the minimum & swap it
+// O(n^2)
 #include <bits/stdc++.h>
 
 using namespace std;
