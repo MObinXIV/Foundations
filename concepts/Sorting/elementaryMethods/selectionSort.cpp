@@ -25,4 +25,6 @@ int main()
 {
     vector<int>arr{1,9,5,7,3,2};
     selectionSort(arr);
+    for (auto it : arr)
+        cout << it << " ";
 }
