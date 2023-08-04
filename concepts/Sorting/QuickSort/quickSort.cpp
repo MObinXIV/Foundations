@@ -1,4 +1,4 @@
-// 1- pic a pivot & place in correct place in a sorted array
+// 1- pick a pivot & place in correct place in a sorted array
 // 2- Smaller on the left and larger on the right
 // Tc-> O(n*log(n))
 // doesn't use extra space to store unlike mergeSort
