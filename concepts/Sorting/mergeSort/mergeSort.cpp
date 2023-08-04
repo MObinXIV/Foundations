@@ -45,14 +45,3 @@ vector<int> sortArray(vector<int> &nums)
     mergeSort(nums,low,high);
     return nums;
 }
-int main()
-
-{
-    vector<int>arr{2,3,1,5,2};
-    mergeSort(arr,0,arr.size()-1);
-    for(auto it:arr)
-    {
-        cout<<it<<" ";
-    }
-    cout<<endl;
-}

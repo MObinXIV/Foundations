@@ -20,11 +20,3 @@ void bubble_Sort(vector<int> &arr)
         break;
     }
 }
-int main()
-
-{
-    vector<int> arr{1, 9, 5, 7, 3, 2};
-    bubble_Sort(arr);
-    for (auto it : arr)
-        cout << it << " ";
-}

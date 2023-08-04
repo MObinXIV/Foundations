@@ -36,14 +36,3 @@ void quickSort(vector<int>&arr,int low , int high)
         quickSort(arr, pIndex+1, high);
     }
 }
-int main()
-
-{
-vector<int>arr{2,3,1,5,2};
-quickSort(arr, 0, arr.size() - 1);
-for (auto it : arr)
-{
-        cout<<it<<" ";
-    }
-    cout<<endl;
-}

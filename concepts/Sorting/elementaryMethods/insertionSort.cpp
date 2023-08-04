@@ -18,11 +18,3 @@ void insertionSort(vector<int> &arr)
         }
     }
 }
-int main()
-
-{
-    vector<int> arr{1, 9, 5, 7, 3, 70, 2, 0};
-    insertionSort(arr);
-    for (auto it : arr)
-        cout << it << " ";
-}
