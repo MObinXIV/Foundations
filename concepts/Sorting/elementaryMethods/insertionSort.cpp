@@ -18,3 +18,20 @@ void insertionSort(vector<int> &arr)
         }
     }
 }
+
+void recursiveInsertion(int ind ,vector<int>&arr)
+{
+    if(ind==arr.size())
+    {
+        return;
+    }
+    int j = ind;
+    while (j > 0 && arr[j - 1] > arr[j])
+    {
+        int tmp = arr[j - 1];
+        arr[j - 1] = arr[j];
+        arr[j] = tmp;
+        j--;
+    }
+    recursiveInsertion(ind+1,arr);
+}
