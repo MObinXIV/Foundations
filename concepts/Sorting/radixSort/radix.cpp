@@ -12,7 +12,7 @@ int getMax(vector<int> arr)
     return max;
 }
 
-void countingSort(vector<int> arr, int div)
+void countingSort(vector<int> &arr, int div)
 {
     vector<int> output(arr.size());
     vector<int> count(10, 0);
@@ -56,7 +56,7 @@ void countingSort(vector<int> arr, int div)
         arr[i] = output[i];
 }
 
-void radixSort(vector<int> arr)
+void radixSort(vector<int> &arr)
 {
     int m = getMax(arr);
 
