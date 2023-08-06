@@ -24,6 +24,8 @@ void countingSort(vector<int> arr, int div)
         int temp = arr[i];
         if (temp < 0)
             temp = ~temp;
+        else
+            temp = temp;
         count[(temp / div) % 10]++; // get the current digit and hash it into the array
     }
 
@@ -44,6 +46,8 @@ void countingSort(vector<int> arr, int div)
         int temp = arr[i];
         if (temp < 0)
             temp = ~temp;
+        else
+            temp = temp;
         output[count[(temp / div) % 10] - 1] = temp;
         count[(temp / div) % 10]--;
     }
@@ -58,17 +62,4 @@ void radixSort(vector<int> arr)
 
     for (int div = 1; m / div > 0; div *= 10)
         countingSort(arr, div);
-}
-
-int main()
-{
-    vector<int> arr = {-123, 0, 1, -789, 234, -123, -456, -789, 234};
-    radixSort(arr);
-
-    for (int i = 0; i < arr.size(); i++)
-        cout << arr[i] << " ";
-
-    cout << endl;
-
-    return 0;
 }
