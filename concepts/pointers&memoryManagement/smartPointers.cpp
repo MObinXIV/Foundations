@@ -68,3 +68,44 @@ int main()
     // Thus, the destructor of MyClass is called here.
     return 0;
 }
+
+// The following code shows that shared pointers are similar to unique pointers, except that they allow us to create multiple copies of a pointer and safely delete the object only when all the pointers are out of scope.
+
+#include <iostream>
+#include <memory>
+
+class MyClass
+{
+public:
+    int i;
+    MyClass()
+    {
+        std::cout << "\n created\n";
+    }
+    ~MyClass()
+    {
+        std::cout << "\n destroyed\n";
+    }
+};
+
+int main()
+{
+    if (true)
+    {
+        // Scope of the MyClass object is this if-block
+        shared_ptr<MyClass> ptr = make_shared<MyClass>();
+
+        // Copying is allowed with shared pointers. Yes!
+        shared_ptr<MyClass> ptr2 = ptr;
+
+        // Can use both pointers without any errors
+        ptr2->i = 5;
+        std::cout << "\n"
+                  << ptr2->i << ", " << ptr->i << "\n";
+    }
+
+    // The pointer gets deallocated automatically at this point.
+    // Thus, the destructor of MyClass is called here.
+
+    return 0;
+}
