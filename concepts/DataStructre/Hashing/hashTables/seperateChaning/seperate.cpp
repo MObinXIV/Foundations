@@ -28,7 +28,7 @@ class HashTable
         // insert data into hash tables
         void add(int key)
         {
-            if (contains(key)) // A hash set is a data structure that is used to store unique elements. This means that no two elements in a hash set can have the same value. If we allow duplicate elements in the hash set, then it will no longer be a hash set.
+            if (contains(key)) // A hash set is a data structure that is used to store unique elements. This means that (no two elements in a hash set can have the same value). If we allow duplicate elements in the hash set, then it will no longer be a hash set.
             {
                 return;
             }
