@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/rotate-array/
+// https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 #include <bits/stdc++.h>
 
 using namespace std;
