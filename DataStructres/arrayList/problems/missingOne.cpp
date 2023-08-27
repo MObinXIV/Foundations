@@ -74,14 +74,13 @@ int missingNumber(vector<int> &nums)
 }
 
 // O(nlogn)+O(logn)
-int missing_number(int nums[], int n)
+int missingNumber(vector<int> &nums)
 {
-
-    // Sort the array.
-    sort(nums, nums + n);
+    int n = nums.size();
+    sort(nums.begin(), nums.end());
 
     // Initialize the left and right pointers.
-    int left = 0, right = n - 1;
+    int left = 0, right = n;
 
     // Loop until the left pointer is equal to the right pointer.
     while (left < right)
