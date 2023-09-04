@@ -25,6 +25,29 @@ it's ongoing process , applied to every single code or algorithm U generate and 
 
 it consists of 2 parts: 
 
-- Auxilary space -> space U take to solve the problem.
+- Auxilary space -> space U take to solve the problem, **in recursive programs the space complexity is the height of the tree,only interlinked function work in the same branch** 
 - input space -> space that U take to store the input.
 
+
+## Recurence 
+
+### Akra-Bazzi
+
+![Alt text](image.png)
+
+
+
+
+
+![Alt text](image-1.png)
+
+
+
+
+
+![Alt text](image-2.png)
+
+
+
+
+![Alt text](image-3.png)
