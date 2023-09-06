@@ -32,6 +32,7 @@ vector<string> readFromTextFile(string filePath)
         {
             fileLines.push_back(line);
         }
+        myFile.close();
     }
     else
     {
@@ -39,9 +40,9 @@ vector<string> readFromTextFile(string filePath)
     }
     return fileLines;
 }
-int main()
+void addToText()
 {
-    string txt;
+string txt;
     int options;
     while (true)
     {
@@ -66,4 +67,8 @@ int main()
             break;
         }
     }
+}
+int main()
+{
+    addToText();
 }
