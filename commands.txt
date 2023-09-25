@@ -1,0 +1,9 @@
+
+
+## Running multiple files commands
+
+
+1. g++ -c (vehicle.cpp car.cpp bike.cpp)-> .cpp files to compile that associated
+2. ar ru - vehicle_library.a (car.o bike.o)-> link the .o file into one .a library
+3. g++ -o client client.cpp vehicle_library.a -> create exe file combine the main file and the library files to compile
+4. ./client -> Run
